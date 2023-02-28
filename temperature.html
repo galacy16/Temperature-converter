@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Rampart+One&family=Roboto:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles.css" />
+        <title>Temperature convert</title>
+    </head>
+    <body>
+        <div class="temp">
+            <h1 class="heading">Temperature converter</h1>
+        </div>
+        <div class="temp">
+            <p class="quest">
+                In which metric is the temperature you are converting?
+            </p>
+            <label>
+                <input type="radio" name="metric" value="celsius" /> Celsius
+            </label>
+            <label>
+                <input type="radio" name="metric" value="fahrenheit" />
+                Fahrenheit
+            </label>
+            <label>
+                <input type="radio" name="metric" value="kelvin" /> Kelvin
+            </label>
+
+            <p class="quest">
+                Please input the temperature value you would like to convert:
+            </p>
+            <input class="number" type="number" id="temperature" required />
+
+            <p class="quest">
+                To which metric system would you like to convert your value?
+            </p>
+            <label>
+                <input type="radio" name="convert" value="celsius" /> Celsius
+            </label>
+            <label>
+                <input type="radio" name="convert" value="fahrenheit" />
+                Fahrenheit
+            </label>
+            <label>
+                <input type="radio" name="convert" value="kelvin" /> Kelvin
+            </label>
+
+            <button id="convert-button">Convert</button>
+
+            <div class="result">
+                <span class="temperature"></span>
+                <span class="converted-temperature"></span>
+            </div>
+            <p id="result"></p>
+        </div>
+
+        <script src="temperature.js"></script>
+    </body>
+</html>

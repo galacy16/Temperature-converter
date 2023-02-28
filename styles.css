@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    background-image: url("temperature.jpg");
+    background-size: cover;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.heading {
+    font-family: 'Rampart One', cursive;
+    font-size: 3rem;
+}
+
+.temp {
+    background: radial-gradient(circle at 3% 4.8%, rgb(169, 224, 127) 0%, rgb(248, 247, 121) 86.6%);
+
+    opacity: 0.9;
+    width: 60%;
+    display: flex;
+    margin: auto;
+    text-align: center;
+    padding: 80px;
+    line-height: 1.5;
+    flex-direction: column;
+    margin-top: 70px;
+    border-radius: 4%;
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+    color: ##333;
+}
+
+.quest {
+    padding: 1rem;
+    font-size: 1.5rem !important;
+    font-weight: 500;
+}
+
+input[type="radio"],
+label {
+    vertical-align: baseline;
+
+    margin: 8px;
+    font-size: 1.2rem;
+}
+
+input[type="radio"]:hover {
+    color: #e6d9d9;
+}
+
+.number {
+    width: 30%;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 1.3rem;
+}
+
+#convert-button {
+    font-family: inherit;
+    width: 30%;
+    appearance: none;
+    background-color: #ffffff;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #adcfff 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: -0.24px;
+    margin: 0 auto;
+    outline: none;
+    padding: 0.5rem 0.7rem;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.15s;
+    -webkit-user-select: none;
+    user-select: none;
+    touch-action: manipulation;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+#convert-button:hover {
+    background-color: #ffc229;
+    box-shadow: #ff6314 0 -6px 8px inset;
+    transform: scale(1.125);
+}
+
+#convert-button:active {
+    transform: scale(1.025);
+}
+
+.temperature {
+    box-sizing: border-box;
+    font-size: 24px;
+    padding: 3px;
+    color: rgb(185, 0, 185);
+}
+
+.converted-temperature {
+    box-sizing: border-box;
+    font-size: 24px;
+    padding: 3px;
+    color: #722600;
+}
+
+.result {
+    box-sizing: border-box;
+    font-size: 24px;
+    color: #333;
+    font-family: Arial, sans-serif;
+   margin-top: 20px; */
+} 
+
+@media (max-width: 65rem) {
+    .heading {
+       font-size: 2.5rem;
+    }
+    
+    .quest {
+        padding: 0.7rem;
+        font-size: 1.2rem !important;
+    }
+    
+    input[type="radio"],
+label {
+    vertical-align: baseline;
+    padding: 2px;
+    margin: 8px;
+    font-size: 1rem;
+}
+}
+
+@media (max-width: 44rem) {
+    .heading {
+       font-size: 2rem;
+    }
+    
+    .quest {
+        padding: 0.4rem;
+        font-size: 0.9rem !important;
+    }
+    
+    input[type="radio"],
+label {
+    vertical-align: baseline;
+    padding: 1px;
+    margin: 8px;
+    font-size: 0.8rem;
+}
+}
